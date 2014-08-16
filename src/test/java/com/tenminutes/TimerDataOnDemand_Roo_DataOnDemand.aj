@@ -24,7 +24,13 @@ privileged aspect TimerDataOnDemand_Roo_DataOnDemand {
     
     public Timer TimerDataOnDemand.getNewTransientTimer(int index) {
         Timer obj = new Timer();
+        setMessage(obj, index);
         return obj;
+    }
+    
+    public void TimerDataOnDemand.setMessage(Timer obj, int index) {
+        String message = "message_" + index;
+        obj.setMessage(message);
     }
     
     public Timer TimerDataOnDemand.getSpecificTimer(int index) {
