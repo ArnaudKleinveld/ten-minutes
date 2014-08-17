@@ -7,5 +7,8 @@
             <menu:item id="i_timer_new" messageCode="global_menu_new" url="/timers?form" z="EQax03GSpvkIHWwPhmjr8GB+9Cc="/>
             <menu:item id="i_timer_list" messageCode="global_menu_list" url="/timers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="0sHp7c93AIKI/hpvJCbVeJTa1yo="/>
         </menu:category>
+        <menu:category id="c_seleniumtests" z="PPLMd2yNB6/LSbjIWogAacRPU+Q=">
+            <menu:item id="si_seleniumtests_test" messageCode="selenium_menu_test_suite" url="/resources/selenium/test-suite.xhtml" z="wwunW/IPDcunN97u41MvMJZQ2to="/>
+        </menu:category>
     </menu:menu>
 </div>
