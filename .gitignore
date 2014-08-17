@@ -14,3 +14,8 @@ hs_err_pid*
 # roo
 log.roo
 /target/
+
+# eclipse
+.classpath
+.project
+.settings/
