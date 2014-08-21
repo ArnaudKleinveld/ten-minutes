@@ -21,6 +21,10 @@ body {
 	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+
+	/* fix max-width incompatibility in IE6 */
+	width:expression(document.body.clientWidth > 800? "800px": "auto" );
+	
 	overflow:hidden;
 	display:block;
 }
@@ -35,7 +39,7 @@ body {
 #menu {
     background: #eee;
   	position:relative;
-  	float:right;
+  	float:right;  	
   	left:0px;
   	width:220px;
   	margin-left:15px;
@@ -93,7 +97,7 @@ body {
 #footer a:link {color: #7db223;}
 
 .quicklinks {
-	clear:both;
+	clear:both; 
 	padding-bottom: 15px
 }
 .quicklinks span {
@@ -136,8 +140,8 @@ div .box {
 
 /* menu elements*/
 
-a.menu, a.menu:link, a.menu:visited {display:block; width:150px; height:25px;}
-
+a.menu, a.menu:link, a.menu:visited {display:block; width:150px; height:25px;} 
+	
 /* text styles */
 
 h1,h2,h3 {
